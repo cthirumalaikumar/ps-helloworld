@@ -38,13 +38,13 @@ securityContext: {}
 
 service:
   name: hello-world
-  type: LoadBalancer
+  type: ClusterIP
   externalPort: 80
   internalPort: 80
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
